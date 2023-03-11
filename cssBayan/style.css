@@ -2,3 +2,65 @@ body {
   box-sizing: border-box;
   background-color: tomato;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mem_title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 50px;
+  font-weight: 600;
+  /* margin-bottom: 10px; */
+}
+
+.plus_img{
+  padding-right: 5px;
+  width: 30px;
+  transition: 1s;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-bottom: 5px solid black;
+}
+
+.mem_png{
+  /* display: none; */
+  opacity: 0;
+  width: 3px;
+  transition-duration: 1s;
+}
+
+/* .dropdown_img{
+  display: none;
+} */
+
+.mem_tittle {
+}
+
+.mem_tittle:hover .mem_png {
+  /* display: block; */
+  opacity: 100;
+  width: 500px;
+}
+.mem_tittle:hover .plus_img {
+  transform: rotate(45deg);
+}
