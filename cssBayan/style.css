@@ -1,5 +1,6 @@
 html {
   font-size: 50px;
+  font-weight: 600;
 }
 
 body {
@@ -10,6 +11,10 @@ body {
   background-color: tomato;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -37,11 +42,6 @@ li{
 .mem_title-container {
   display: flex;
   justify-content: space-between;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 .plus_img {
@@ -92,10 +92,6 @@ p {
   .wrapper:hover {
     cursor: default;
   }
-  
-  /* .plus_img{
-    width: 20px;
-  } */
 
   .mem_tittle:hover .mem_png {
     opacity: 100;
@@ -111,10 +107,6 @@ p {
   .wrapper:hover {
     cursor: default;
   }
-  
-  /* .plus_img{
-    width: 15px;
-  } */
 
   .mem_tittle:hover .mem_png {
     opacity: 100;
