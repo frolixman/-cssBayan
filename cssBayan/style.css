@@ -123,3 +123,18 @@ label {
     cursor: default;
   }
 }
+
+
+@media (hover: none) and (pointer: coarse) {
+  .mem_tittle-container:hover .mem_png {
+    display: block;
+    opacity: 0;
+    width: 0.05rem;
+    transition-duration: 1s;
+    margin: 0 auto;
+  }
+
+  .mem_tittle-container:hover .plus_img {
+    transform: none;
+  }
+}
