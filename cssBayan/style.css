@@ -1,0 +1,140 @@
+html {
+  font-size: 100%;
+  font-weight: 600;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: tomato;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 50%;
+  
+  margin: 2rem auto;
+  padding: 3rem;
+
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-bottom: 0.1rem solid black;
+}
+
+.radio {
+  display: none;
+}
+
+.mem_title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  width: 92%;
+}
+
+.plus_img {
+  display: none;
+  padding-right: 0.1rem;
+  width: 0.6rem;
+  transition: 1s;
+}
+
+.wrapper:hover {
+  cursor: default;
+}
+
+.wrapper:hover .plus_img {
+  display: flex;
+  align-self: start;
+  padding-top: 0.2rem;
+}
+
+
+.mem_png{
+  display: block;
+  opacity: 0;
+  width: 0.05rem;
+  transition-duration: 1s;
+  margin: 0 auto;
+
+}
+
+.radio:checked + label > .mem_png {
+  opacity: 1;
+  width: 50%;
+  margin: 0.3rem 0 0.3rem 30%;
+}
+
+.mem_tittle-container:hover .mem_png {
+  opacity: 1;
+  width: 50%;
+  margin: 0.3rem 0 0.3rem 30%;
+}
+
+.mem_tittle-container:active label {
+  color: blue;
+  opacity: 0.75;
+}
+
+.mem_tittle-container:hover .plus_img {
+  transform: rotate(45deg);
+}
+
+
+                                         /*media 1920px*/
+@media screen and (min-width: 1920px) {  
+  html {
+    font-size: 130%;
+  }
+
+  .wrapper:hover, label:hover {
+    cursor: pointer;
+  }
+}
+                                         /*media 820px*/
+@media screen and (max-width: 820px) {  
+  html {
+    font-size: 70%;
+  }
+
+  label {
+    width: 90%;
+  }
+
+  .wrapper:hover {
+    cursor: default;
+  }
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  .mem_tittle-container:hover .mem_png {
+    display: block;
+    opacity: 0;
+    width: 0.05rem;
+    transition-duration: 1s;
+    margin: 0 auto;
+  }
+
+  .mem_tittle-container:hover .plus_img {
+    transform: none;
+  }
+}
